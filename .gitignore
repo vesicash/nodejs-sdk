@@ -1,0 +1,26 @@
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# IDE / Editor
+.idea
+
+### Node template
+# Logs
+/logs
+*.log
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables file
+.env
+yarn.lock
+package-lock.json
+test.js
