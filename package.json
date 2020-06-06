@@ -7,22 +7,38 @@
     "lint": "eslint ./resources",
     "test": "jest"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  },
   "keywords": [
     "vesicash",
     "escrow-sdk",
-    "escrow"
+    "escrow",
+    "payment",
+    "naira",
+    "Africa"
   ],
-  "author": "Balogun Wahab <03balogun@gmail.com>",
+  "author": "Balogun Wahab <03balogun@gmail.com> (http://github.com/03balogun)",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
-    "dotenv": "^8.2.0",
-    "superagent": "^5.2.2"
+    "axios": "^0.19.2"
   },
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "husky": "^4.2.5",
     "jest": "^26.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/03balogun/vesicash-nodejs-sdk/issues"
+  },
+  "homepage": "https://github.com/03balogun/vesicash-nodejs-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/03balogun/vesicash-nodejs-sdk.git"
   }
 }
