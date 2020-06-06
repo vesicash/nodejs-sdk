@@ -106,7 +106,7 @@ class Transactions {
      * @param {Object} payload
      * @return {Promise<AxiosResponse<T>>} Axios Response
      */
-  rejectDeleivery (payload) {
+  rejectDelivery (payload) {
     return axios.post(`${this._endpoint}/reject_delivery`, payload);
   }
 }

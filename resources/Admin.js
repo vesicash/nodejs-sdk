@@ -25,7 +25,7 @@ class Admin {
    * @param {Object} payload
    * @return {Promise<AxiosResponse<T>>} Axios Response
    */
-  walletBallance (payload) {
+  walletBalance (payload) {
     return axios.post(`${this._endpoint}/account/wallet`, payload);
   }
 }
