@@ -104,6 +104,7 @@ All method returns a promise that resolves into an axios response in this format
    [Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication.
 
 ### `Transactions`
+
 - ##### `vesicash.transaction.create()` create a transaction by passing the required payload
 
     ```javascript
@@ -363,3 +364,87 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) rejecting a shipped transaction.
+
+### Payment
+
+- #### `vesicash.payment.fundTransaction()` Fund a transaction
+
+    ```javascript
+    ...
+        
+    try {
+      const payload = {
+        transaction_id: "F2SUkXINIJ6ALjDmt3cT", // the transaction id
+        success_page: "https://website.com/payment/success" // A URL where you want the payer to be directed after payment - optional field
+      };
+      const response = await vesicash.payment.fundTransaction(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/funding-a-transaction) funding a transaction.
+
+- #### `vesicash.payment.initiateDisbursement()` Initiate a manual disbursement
+
+    ```javascript
+    ...
+        
+    try {
+      const payload = {
+          recipient_id: 'ACCOUNT-ID', // your recipient account ID
+          amount: 1000,
+          currency: "NGN",
+          debit_currency: "NGN"
+      };
+      const response = await vesicash.payment.initiateDisbursement(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) initiating a manual disbursement.
+
+### Admin
+
+- #### `vesicash.admin.addBank()` Adding Bank or Mobile Money Details
+    ```javascript
+    ...
+    
+    try {
+      const payload = {
+        account_id : 6751951308, // your account id
+        updates: {
+          bank_id : 23,
+          account_name : "John Doe",
+          account_no : "3012364609",
+          mobile_money_operator: "Tigo" // (this field is only required when saving a mobile money details)
+        }
+      };
+      const response = await vesicash.admin.addBank(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/disbursement/bank-details) adding Bank or Mobile Money Details.
+
+- #### `vesicash.admin.walletBalance()` Check wallet balance
+    ```javascript
+    ...
+            
+    try {
+      const payload = {
+        account_id : 'ACCOUNT-ID', // your account id
+      };
+      const response = await vesicash.admin.walletBalance(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) about wallet balance.

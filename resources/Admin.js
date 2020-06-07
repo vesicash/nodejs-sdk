@@ -12,10 +12,10 @@ class Admin {
   }
 
   /**
-     * @description Fund a transaction
-     * @param {Object} payload
-     * @return {Promise<AxiosResponse<T>>} Axios Response
-     */
+   * @description Adding Bank or Mobile Money Details
+   * @param {Object} payload
+   * @return {Promise<AxiosResponse<T>>} Axios Response
+   */
   addBank (payload) {
     return axios.post(`${this._endpoint}/user/update/bank`, payload);
   }
