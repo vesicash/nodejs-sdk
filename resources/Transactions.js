@@ -75,12 +75,30 @@ class Transactions {
   }
 
   /**
-     * @description Extend a transaction due date
+   * @description List all the transactions that belongs to a specific customer
+   * @param {Object} payload
+   * @return {Promise<AxiosResponse<T>>} Axios Response
+   */
+  listByUser (payload) {
+    return axios.post(`${this._endpoint}/listByUser`, payload);
+  }
+
+  /**
+     * @description Request transaction due date extension
      * @param {Object} payload
      * @return {Promise<AxiosResponse<T>>} Axios Response
      */
-  extendDueDate (payload) {
+  requestExtendDueDate (payload) {
     return axios.post(`${this._endpoint}/request/due_date_extension`, payload);
+  }
+
+  /**
+   * @description Approve extend transaction due date
+   * @param {Object} payload
+   * @return {Promise<AxiosResponse<T>>} Axios Response
+   */
+  approveExtendDueDate (payload) {
+    return axios.post(`${this._endpoint}/approve/due_date_extension`, payload);
   }
 
   /**

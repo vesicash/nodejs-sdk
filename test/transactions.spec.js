@@ -32,8 +32,16 @@ describe('All methods are defined', () => {
     expect(vesicash.transactions.listByBusiness).toBeDefined();
   });
 
-  test('that extendDueDate method exists', () => {
-    expect(vesicash.transactions.extendDueDate).toBeDefined();
+  test('that listByUser method exists', () => {
+    expect(vesicash.transactions.listByUser).toBeDefined();
+  });
+
+  test('that requestExtendDueDate method exists', () => {
+    expect(vesicash.transactions.requestExtendDueDate).toBeDefined();
+  });
+
+  test('that approveExtendDueDate method exists', () => {
+    expect(vesicash.transactions.approveExtendDueDate).toBeDefined();
   });
 
   test('that delivered method exists', () => {
@@ -77,8 +85,16 @@ describe('Transaction resource test', () => {
     .listByBusiness({}))
     .rejects.toThrow(AxiosError));
 
-  test('extendDueDate fails when no payload is passed', () => expect(vesicash.transactions
-    .extendDueDate({}))
+  test('listByUser fails when no payload is passed', () => expect(vesicash.transactions
+    .listByUser({}))
+    .rejects.toThrow(AxiosError));
+
+  test('requestExtendDueDate fails when no payload is passed', () => expect(vesicash.transactions
+    .requestExtendDueDate({}))
+    .rejects.toThrow(AxiosError));
+
+  test('approveExtendDueDate fails when no payload is passed', () => expect(vesicash.transactions
+    .approveExtendDueDate({}))
     .rejects.toThrow(AxiosError));
 
   test('delivered fails when no payload is passed', () => expect(vesicash.transactions

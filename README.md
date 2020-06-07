@@ -31,7 +31,9 @@ const Vesicash = require('vesicash-nodejs-sdk');
 const credentials = {
     publicKey: 'VESICASH-PUBLIC-KEY',
     privateKey: 'VESICASH-PRIVATE-KEY'
-}
+};
+
+// you can get one by registering as a business on https://vesicash.com
 
 const isSandbox = true; // for Sandbox, defaults to false 
 
@@ -143,7 +145,7 @@ All method returns a promise that resolves into an axios response in this format
      
     try {
       const payload = {
-         transaction_id: "F2SUkXINIJ6ALjDmt3cT" // your the transaction-id
+         transaction_id: "F2SUkXINIJ6ALjDmt3cT" // the transaction-id
       };
       const response = await vesicash.transactions.sendTransaction(payload);
       // do something with response
@@ -162,7 +164,7 @@ All method returns a promise that resolves into an axios response in this format
      
     try {
       const payload = {
-          	transaction_id:"F2SUkXINIJ6ALjDmt3cT", // your the transaction-id
+          	transaction_id:"F2SUkXINIJ6ALjDmt3cT", // the transaction-id
             parties: {
                 recipient: {
                     account_id: 3881795242
@@ -186,7 +188,7 @@ All method returns a promise that resolves into an axios response in this format
      
     try {
       const payload = {
-          	transaction_id:"F2SUkXINIJ6ALjDmt3cT", // your the transaction-id
+          	transaction_id:"F2SUkXINIJ6ALjDmt3cT", // the transaction-id
       };
       const response = await vesicash.transactions.acceptTransaction(payload);
       // do something with response
@@ -196,3 +198,168 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/agree-to-transaction) about agreeing to a transaction.
+
+- `vesicash.transaction.rejectTransaction()` Reject a transaction
+
+    ```javascript
+    ...
+     
+    try {
+      const payload = {
+          "transaction_id": "F2SUkXINIJ6ALjDmt3cT", // the transaction id 
+          "reason": "I am rejecting this transaction because the amount stated is not what we discussed"
+      };
+      const response = await vesicash.transactions.rejectTransaction(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/reject-a-transaction) about rejecting a transaction.
+
+
+- `vesicash.transaction.listById()` Fetch transaction details
+
+    ```javascript
+    ...
+     
+    try {
+      const payload = "F2SUkXINIJ6ALjDmt3cT"; // the transaction id
+      const response = await vesicash.transactions.listById(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/fetch-transaction-details) about fetching a transaction.
+
+- `vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers
+
+    ```javascript
+    ...
+     
+    try {
+      const payload = {
+          "business_id": "ACCOUNT-ID" // the business account id
+      };
+      const response = await vesicash.transactions.listByBusiness(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
+
+- `vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer
+
+    ```javascript
+    ...
+     
+    try {
+      const payload = {
+          "account_id": "ACCOUNT-ID" // the account id
+      };
+      const response = await vesicash.transactions.listByUser(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
+
+- `vesicash.transaction.requestExtendDueDate()` Request transaction due date extension
+
+    ```javascript
+    ...
+     
+    try {
+      const payload = {
+          transaction_id: "F2SUkXINIJ6ALjDmt3cT", // the transaction id
+          due_date:"12/2/2020"
+      };
+      const response = await vesicash.transactions.requestExtendDueDate(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
+
+- `vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request
+
+    ```javascript
+    ...
+     
+    try {
+      const payload = {
+          transaction_id: "F2SUkXINIJ6ALjDmt3cT", // the transaction id
+          due_date:"12/2/2020"
+      };
+      const response = await vesicash.transactions.approveExtendDueDate(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
+
+- `vesicash.transaction.delivered()` Mark transaction as shipped
+
+    ```javascript
+    ...
+    
+    try {
+      const payload = {
+          transaction_id: "F2SUkXINIJ6ALjDmt3cT", // the transaction id
+      };
+      const response = await vesicash.transactions.delivered(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/indicate-transaction-delivery) about transaction delivery.
+
+- `vesicash.transaction.acceptDelivery()` Accept a shipped transaction
+
+    ```javascript
+    ...
+    
+    try {
+      const payload = {
+          transaction_id: "F2SUkXINIJ6ALjDmt3cT", // the transaction id
+      };
+      const response = await vesicash.transactions.acceptDelivery(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
+
+- `vesicash.transaction.rejectDelivery()` Reject shipped transaction
+
+    ```javascript
+    ...
+    
+    try {
+      const payload = {
+          transaction_id: "F2SUkXINIJ6ALjDmt3cT", // the transaction id
+          reason: "Rejection reasons"
+      };
+      const response = await vesicash.transactions.rejectDelivery(payload);
+      // do something with response
+    }
+    catch (e) {
+      //
+    }
+    ```
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
