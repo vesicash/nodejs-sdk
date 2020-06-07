@@ -10,32 +10,32 @@
 * [Installation](#installation)
 * [Usage](#usage)
 * [Resources](#resources)
-    - [Note](#note)
+    + [Note](#note)
     + [Auth](#auth)
-        - [`vesicash.auth.login()` login into vesicash](#vesicashauthlogin-login-into-vesicash)
-        - [`vesicash.auth.signup()` Signup a new user](#vesicashauthsignup-signup-a-new-user)
+        - [`auth.login()` login into vesicash](#authlogin-login-into-vesicash)
+        - [`auth.signup()` Signup a new user](#authsignup-signup-a-new-user)
     + [Transactions](#transactions)
-        - [`vesicash.transaction.create()` create a transaction](#vesicashtransactioncreate-create-a-transaction-by-passing-the-required-payload)
-        - [`vesicash.transaction.sendTransaction()` Send a transaction to involved parties.](#vesicashtransactionsendtransaction-send-a-transaction-to-involved-parties)
-        - [`vesicash.transaction.partiesUpdate()` Update the parties involved in a transaction.](#vesicashtransactionpartiesupdate-update-the-parties-involved-in-a-transaction)
-        - [`vesicash.transaction.acceptTransaction()` Agree to transaction](#vesicashtransactionaccepttransaction-agree-to-transaction)
-        - [`vesicash.transaction.rejectTransaction()` Reject a transaction](#vesicashtransactionrejecttransaction-reject-a-transaction)
-        - [`vesicash.transaction.listById()` Fetch transaction details](#vesicashtransactionlistbyid-fetch-transaction-details)
-        - [`vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers](#vesicashtransactionlistbybusiness-list-all-the-transaction-belonging-to-you-business-or-your-customers)
-        - [`vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer](#vesicashtransactionlistbyuser-list-all-the-transactions-that-belongs-to-a-specific-customer)
-        - [`vesicash.transaction.requestExtendDueDate()` Request transaction due date extension](#vesicashtransactionrequestextendduedate-request-transaction-due-date-extension)
-        - [`vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request](#vesicashtransactionapproveextendduedate-approve-a-transaction-due-date-extension-request)
-        - [`vesicash.transaction.delivered()` Mark transaction as shipped](#vesicashtransactiondelivered-mark-transaction-as-shipped)
-        - [`vesicash.transaction.acceptDelivery()` Accept a shipped transaction](#vesicashtransactionacceptdelivery-accept-a-shipped-transaction)
-        - [`vesicash.transaction.rejectDelivery()` Reject shipped transaction](#vesicashtransactionrejectdelivery-reject-shipped-transaction)
+        - [`transaction.create()` create a transaction](#transactioncreate-create-a-transaction-by-passing-the-required-payload)
+        - [`transaction.sendTransaction()` Send a transaction to involved parties.](#transactionsendtransaction-send-a-transaction-to-involved-parties)
+        - [`transaction.partiesUpdate()` Update the parties involved in a transaction.](#transactionpartiesupdate-update-the-parties-involved-in-a-transaction)
+        - [`transaction.acceptTransaction()` Agree to transaction](#transactionaccepttransaction-agree-to-transaction)
+        - [`transaction.rejectTransaction()` Reject a transaction](#transactionrejecttransaction-reject-a-transaction)
+        - [`transaction.listById()` Fetch transaction details](#transactionlistbyid-fetch-transaction-details)
+        - [`transaction.listByBusiness()` List all the transaction belonging to you business or your customers](#transactionlistbybusiness-list-all-the-transaction-belonging-to-you-business-or-your-customers)
+        - [`transaction.listByUser()` List all the transactions that belongs to a specific customer](#transactionlistbyuser-list-all-the-transactions-that-belongs-to-a-specific-customer)
+        - [`transaction.requestExtendDueDate()` Request transaction due date extension](#transactionrequestextendduedate-request-transaction-due-date-extension)
+        - [`transaction.approveExtendDueDate()` Approve a transaction due date extension request](#transactionapproveextendduedate-approve-a-transaction-due-date-extension-request)
+        - [`transaction.delivered()` Mark transaction as shipped](#transactiondelivered-mark-transaction-as-shipped)
+        - [`transaction.acceptDelivery()` Accept a shipped transaction](#transactionacceptdelivery-accept-a-shipped-transaction)
+        - [`transaction.rejectDelivery()` Reject shipped transaction](#transactionrejectdelivery-reject-shipped-transaction)
     + [Payment](#payment)
-        - [`vesicash.payment.fundTransaction()` Fund a transaction](#vesicashpaymentfundtransaction-fund-a-transaction)
-        - [`vesicash.payment.initiateDisbursement()` Initiate a manual disbursement](#vesicashpaymentinitiatedisbursement-initiate-a-manual-disbursement)
+        - [`payment.fundTransaction()` Fund a transaction](#paymentfundtransaction-fund-a-transaction)
+        - [`payment.initiateDisbursement()` Initiate a manual disbursement](#paymentinitiatedisbursement-initiate-a-manual-disbursement)
     + [Admin](#admin)
-        - [`vesicash.admin.addBank()` Adding Bank or Mobile Money Details](#vesicashadminaddbank-adding-bank-or-mobile-money-details)
-        - [`vesicash.admin.walletBalance()` Check wallet balance](#vesicashadminwalletbalance-check-wallet-balance)
+        - [`admin.addBank()` Adding Bank or Mobile Money Details](#adminaddbank-adding-bank-or-mobile-money-details)
+        - [`admin.walletBalance()` Check wallet balance](#adminwalletbalance-check-wallet-balance)
     + [Upload](#upload)
-        - [`vesicash.upload.uploadFile()` upload a file.](#vesicashuploaduploadfile-upload-a-file)
+        - [`upload.uploadFile()` upload a file.](#uploaduploadfile-upload-a-file)
 * [Development](#development)
     - [Contributing](#contributing)
     - [Tests](#tests)
@@ -107,7 +107,7 @@ All method returns a promise that resolves into an axios response in this format
 ```
 
 ### Auth
-- ##### `vesicash.auth.login()` login into vesicash
+- ##### `auth.login()` login into vesicash
     
     ```javascript
     ...
@@ -124,7 +124,7 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
 
-- ##### `vesicash.auth.signup()` Signup a new user
+- ##### `auth.signup()` Signup a new user
     
     ```javascript
     ...
@@ -145,7 +145,7 @@ All method returns a promise that resolves into an axios response in this format
 
 ### Transactions
 
-- ##### `vesicash.transaction.create()` create a transaction
+- ##### `transaction.create()` create a transaction
 
     ```javascript
     ...
@@ -179,7 +179,7 @@ All method returns a promise that resolves into an axios response in this format
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/create-a-product-transaction) about transactions and how to creat different types of transactions.
 
 
-- ##### `vesicash.transaction.sendTransaction()` Send a transaction to involved parties.
+- ##### `transaction.sendTransaction()` Send a transaction to involved parties.
 
     ```javascript
     ...
@@ -198,7 +198,7 @@ All method returns a promise that resolves into an axios response in this format
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/send-transaction) about sending transactions.
 
 
-- ##### `vesicash.transaction.partiesUpdate()` Update the parties involved in a transaction.
+- ##### `transaction.partiesUpdate()` Update the parties involved in a transaction.
 
     ```javascript
     ...
@@ -222,7 +222,7 @@ All method returns a promise that resolves into an axios response in this format
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/transaction-parties) about transaction parties.
 
 
-- ##### `vesicash.transaction.acceptTransaction()` Agree to transaction
+- ##### `transaction.acceptTransaction()` Agree to transaction
 
     ```javascript
     ...
@@ -240,7 +240,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/agree-to-transaction) about agreeing to a transaction.
 
-- ##### `vesicash.transaction.rejectTransaction()` Reject a transaction
+- ##### `transaction.rejectTransaction()` Reject a transaction
 
     ```javascript
     ...
@@ -260,7 +260,7 @@ All method returns a promise that resolves into an axios response in this format
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/reject-a-transaction) about rejecting a transaction.
 
 
-- ##### `vesicash.transaction.listById()` Fetch transaction details
+- ##### `transaction.listById()` Fetch transaction details
 
     ```javascript
     ...
@@ -276,7 +276,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/fetch-transaction-details) about fetching a transaction.
 
-- ##### `vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers
+- ##### `transaction.listByBusiness()` List all the transaction belonging to you business or your customers
 
     ```javascript
     ...
@@ -294,7 +294,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
 
-- ##### `vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer
+- ##### `transaction.listByUser()` List all the transactions that belongs to a specific customer
 
     ```javascript
     ...
@@ -312,7 +312,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
 
-- ##### `vesicash.transaction.requestExtendDueDate()` Request transaction due date extension
+- ##### `transaction.requestExtendDueDate()` Request transaction due date extension
 
     ```javascript
     ...
@@ -331,7 +331,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
 
-- ##### `vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request
+- ##### `transaction.approveExtendDueDate()` Approve a transaction due date extension request
 
     ```javascript
     ...
@@ -350,7 +350,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
 
-- ##### `vesicash.transaction.delivered()` Mark transaction as shipped
+- ##### `transaction.delivered()` Mark transaction as shipped
 
     ```javascript
     ...
@@ -368,7 +368,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/indicate-transaction-delivery) about transaction delivery.
 
-- ##### `vesicash.transaction.acceptDelivery()` Accept a shipped transaction
+- ##### `transaction.acceptDelivery()` Accept a shipped transaction
 
     ```javascript
     ...
@@ -386,7 +386,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
 
-- ##### `vesicash.transaction.rejectDelivery()` Reject shipped transaction
+- ##### `transaction.rejectDelivery()` Reject shipped transaction
 
     ```javascript
     ...
@@ -407,7 +407,7 @@ All method returns a promise that resolves into an axios response in this format
 
 ### Payment
 
-- #### `vesicash.payment.fundTransaction()` Fund a transaction
+- #### `payment.fundTransaction()` Fund a transaction
 
     ```javascript
     ...
@@ -426,7 +426,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/transactions/funding-a-transaction) funding a transaction.
 
-- #### `vesicash.payment.initiateDisbursement()` Initiate a manual disbursement
+- #### `payment.initiateDisbursement()` Initiate a manual disbursement
 
     ```javascript
     ...
@@ -449,7 +449,7 @@ All method returns a promise that resolves into an axios response in this format
 
 ### Admin
 
-- #### `vesicash.admin.addBank()` Adding Bank or Mobile Money Details
+- #### `admin.addBank()` Adding Bank or Mobile Money Details
     
     ```javascript
     ...
@@ -473,7 +473,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
 [Learn more](https://docs.vesicash.com/api-documentation/disbursement/bank-details) adding Bank or Mobile Money Details.
 
-- #### `vesicash.admin.walletBalance()` Check wallet balance
+- #### `admin.walletBalance()` Check wallet balance
     
     ```javascript
     ...
@@ -493,7 +493,7 @@ All method returns a promise that resolves into an axios response in this format
 
 ### Upload
 
-- #### `vesicash.upload.uploadFile()` upload a file.
+- #### `upload.uploadFile()` upload a file.
 
   This method expects a formdata
   
