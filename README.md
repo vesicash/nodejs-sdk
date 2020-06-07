@@ -15,24 +15,28 @@ Take a look at the [API Docs here](https://docs.vesicash.com/)
 Install the package from [npm](https://www.npmjs.com/package/vesicash-nodejs-sdk) by running 
 
 ```bash
-npm install vesicash-nodejs-sdk
+$ npm install vesicash-nodejs-sdk
 ```
  or
  
- ```
- yarn add vesicash-nodejs-sdk
- ```
+```bash
+$ yarn add vesicash-nodejs-sdk
+```
 
 ## Usage
+To use this sdk you need to first generate your API keys by registering as a business on Vesicash.
+
+**Sandbox** API key by registering via https://sandbox.vesicash.com/signup
+
+**Live** API key by registering via https://vesicash.com/signup
+ 
 
 ```javascript
 const Vesicash = require('vesicash-nodejs-sdk');
 
-// get your public and private key by registering as a business via https://vesicash.com/signup
-
 const credentials = {
-    publicKey: 'VESICASH-PUBLIC-KEY',
-    privateKey: 'VESICASH-PRIVATE-KEY'
+    publicKey: 'VESICASH-PUBLIC-KEY', // replace with your generated PUBLIC Key
+    privateKey: 'VESICASH-PRIVATE-KEY' // replace with your generated PRIVATE Key
 };
 
 const isSandbox = true; // for Sandbox, defaults to false 
@@ -483,3 +487,29 @@ All method returns a promise that resolves into an axios response in this format
 
   ```
 [Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) about wallet balance.
+
+## Development
+
+#### Contributing
+  - clone the project
+    ```bash
+    $ git clone https://github.com/03balogun/vesicash-nodejs-sdk.git
+    ```
+  - install dependencies
+    ```bash
+    $ npm install
+    ```
+
+  - Env
+  - Get your sandbox API keys via https://sandbox.vesicash.com 
+  - Rename `.env.example` to `.env` and update the API keys  
+  - Please follow the eslint rules to ensure consistent code style
+  
+#### Tests
+To run all tests
+```bash
+$ npm run test
+```
+
+## Issues
+If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/03balogun/vesicash-nodejs-sdk/issues)
