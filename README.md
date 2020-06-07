@@ -28,12 +28,12 @@ npm install vesicash-nodejs-sdk
 ```javascript
 const Vesicash = require('vesicash-nodejs-sdk');
 
+// get your public and private key by registering as a business via https://vesicash.com/signup
+
 const credentials = {
     publicKey: 'VESICASH-PUBLIC-KEY',
     privateKey: 'VESICASH-PRIVATE-KEY'
 };
-
-// you can get one by registering as a business on https://vesicash.com
 
 const isSandbox = true; // for Sandbox, defaults to false 
 
@@ -101,7 +101,7 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
     
-   [Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication transaction.
+   [Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication.
 
 ### `Transactions`
 - `vesicash.transaction.create()` create a transaction by passing the required payload
@@ -362,4 +362,4 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
+    [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) rejecting a shipped transaction.
