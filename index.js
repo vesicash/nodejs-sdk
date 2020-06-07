@@ -3,6 +3,7 @@ const transactions = require('./resources/Transactions');
 const payments = require('./resources/Payment');
 const auth = require('./resources/Auth');
 const admin = require('./resources/Admin');
+const upload = require('./resources/Upload');
 
 /**
  * @description
@@ -29,6 +30,7 @@ class Vesicash {
     this.payment = payments;
     this.auth = auth;
     this.admin = admin;
+    this.upload = upload;
   }
 }
 

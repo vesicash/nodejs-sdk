@@ -101,7 +101,7 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
     
-   [Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication.
+[Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication.
 
 ### `Transactions`
 
@@ -136,7 +136,7 @@ All method returns a promise that resolves into an axios response in this format
      //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/create-a-product-transaction) about transactions and how to creat different types of transactions.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/create-a-product-transaction) about transactions and how to creat different types of transactions.
 
 
 - ##### `vesicash.transaction.sendTransaction()` Send a transaction to involved parties.
@@ -155,7 +155,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/send-transaction) about sending transactions.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/send-transaction) about sending transactions.
 
 
 - ##### `vesicash.transaction.partiesUpdate()` Update the parties involved in a transaction.
@@ -179,7 +179,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/transaction-parties) about transaction parties.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/transaction-parties) about transaction parties.
 
 
 - ##### `vesicash.transaction.acceptTransaction()` Agree to transaction
@@ -198,7 +198,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/agree-to-transaction) about agreeing to a transaction.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/agree-to-transaction) about agreeing to a transaction.
 
 - ##### `vesicash.transaction.rejectTransaction()` Reject a transaction
 
@@ -217,7 +217,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/reject-a-transaction) about rejecting a transaction.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/reject-a-transaction) about rejecting a transaction.
 
 
 - ##### `vesicash.transaction.listById()` Fetch transaction details
@@ -234,7 +234,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/fetch-transaction-details) about fetching a transaction.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/fetch-transaction-details) about fetching a transaction.
 
 - ##### `vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers
 
@@ -252,7 +252,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
 
 - ##### `vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer
 
@@ -270,7 +270,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
 
 - ##### `vesicash.transaction.requestExtendDueDate()` Request transaction due date extension
 
@@ -289,7 +289,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
 
 - ##### `vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request
 
@@ -308,7 +308,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
 
 - ##### `vesicash.transaction.delivered()` Mark transaction as shipped
 
@@ -326,7 +326,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/indicate-transaction-delivery) about transaction delivery.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/indicate-transaction-delivery) about transaction delivery.
 
 - ##### `vesicash.transaction.acceptDelivery()` Accept a shipped transaction
 
@@ -344,7 +344,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
 
 - ##### `vesicash.transaction.rejectDelivery()` Reject shipped transaction
 
@@ -363,7 +363,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) rejecting a shipped transaction.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) rejecting a shipped transaction.
 
 ### Payment
 
@@ -384,7 +384,7 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/transactions/funding-a-transaction) funding a transaction.
+[Learn more](https://docs.vesicash.com/api-documentation/transactions/funding-a-transaction) funding a transaction.
 
 - #### `vesicash.payment.initiateDisbursement()` Initiate a manual disbursement
 
@@ -405,11 +405,12 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) initiating a manual disbursement.
+[Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) initiating a manual disbursement.
 
 ### Admin
 
 - #### `vesicash.admin.addBank()` Adding Bank or Mobile Money Details
+    
     ```javascript
     ...
     
@@ -430,9 +431,10 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/disbursement/bank-details) adding Bank or Mobile Money Details.
+[Learn more](https://docs.vesicash.com/api-documentation/disbursement/bank-details) adding Bank or Mobile Money Details.
 
 - #### `vesicash.admin.walletBalance()` Check wallet balance
+    
     ```javascript
     ...
             
@@ -447,4 +449,37 @@ All method returns a promise that resolves into an axios response in this format
       //
     }
     ```
-    [Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) about wallet balance.
+[Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) about wallet balance.
+
+### Upload
+
+- #### `vesicash.upload.uploadFile()` upload a file.
+
+  This method expects a formdata
+  
+  ```javascript
+  ...
+
+  try {
+     const FormData = require('form-data');
+     const fs = require('fs');
+    
+     const files = [
+       fs.createReadStream('/foo/bar1.jpg'),
+       fs.createReadStream('/foo/bar2.jpg'),
+       fs.createReadStream('/foo/bar3.jpg'),
+     ];
+    
+     // Add all the uploaded file to form data
+     for (let i = 0; i < files.length; i++) {
+       FormData.append(`files[${i}]`, files[i]);
+     }
+    
+     const response = await vesicash.upload.uploadFile(payload);
+     // do something with response
+  }catch(e){
+   //
+  }
+
+  ```
+[Learn more](https://docs.vesicash.com/api-documentation/disbursement/initiate-disbursement) about wallet balance.
