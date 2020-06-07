@@ -5,6 +5,42 @@
 
 [![NPM](https://nodei.co/npm/vesicash-nodejs-sdk.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.org/package/vesicash-nodejs-sdk)
 
+## Table of content
+* [Documentation](#documentation)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Resources](#resources)
+    - [Note](#note)
+    + [Auth](#auth)
+      * [`vesicash.auth.login()` login into vesicash](#vesicashauthlogin-login-into-vesicash)
+      * [`vesicash.auth.signup()` Signup a new user](#vesicashauthsignup-signup-a-new-user)
+    + [Transactions](#transactions)
+      * [`vesicash.transaction.create()` create a transaction by passing the required payload](#vesicashtransactioncreate-create-a-transaction-by-passing-the-required-payload)
+      * [`vesicash.transaction.sendTransaction()` Send a transaction to involved parties.](#vesicashtransactionsendtransaction-send-a-transaction-to-involved-parties)
+      * [`vesicash.transaction.partiesUpdate()` Update the parties involved in a transaction.](#vesicashtransactionpartiesupdate-update-the-parties-involved-in-a-transaction)
+      * [`vesicash.transaction.acceptTransaction()` Agree to transaction](#vesicashtransactionaccepttransaction-agree-to-transaction)
+      * [`vesicash.transaction.rejectTransaction()` Reject a transaction](#vesicashtransactionrejecttransaction-reject-a-transaction)
+      * [`vesicash.transaction.listById()` Fetch transaction details](#vesicashtransactionlistbyid-fetch-transaction-details)
+      * [`vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers](#vesicashtransactionlistbybusiness-list-all-the-transaction-belonging-to-you-business-or-your-customers)
+      * [`vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer](#vesicashtransactionlistbyuser-list-all-the-transactions-that-belongs-to-a-specific-customer)
+      * [`vesicash.transaction.requestExtendDueDate()` Request transaction due date extension](#vesicashtransactionrequestextendduedate-request-transaction-due-date-extension)
+      * [`vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request](#vesicashtransactionapproveextendduedate-approve-a-transaction-due-date-extension-request)
+      * [`vesicash.transaction.delivered()` Mark transaction as shipped](#vesicashtransactiondelivered-mark-transaction-as-shipped)
+      * [`vesicash.transaction.acceptDelivery()` Accept a shipped transaction](#vesicashtransactionacceptdelivery-accept-a-shipped-transaction)
+      * [`vesicash.transaction.rejectDelivery()` Reject shipped transaction](#vesicashtransactionrejectdelivery-reject-shipped-transaction)
+    + [Payment](#payment)
+    - [`vesicash.payment.fundTransaction()` Fund a transaction](#vesicashpaymentfundtransaction-fund-a-transaction)
+    - [`vesicash.payment.initiateDisbursement()` Initiate a manual disbursement](#vesicashpaymentinitiatedisbursement-initiate-a-manual-disbursement)
+    + [Admin](#admin)
+    - [`vesicash.admin.addBank()` Adding Bank or Mobile Money Details](#vesicashadminaddbank-adding-bank-or-mobile-money-details)
+    - [`vesicash.admin.walletBalance()` Check wallet balance](#vesicashadminwalletbalance-check-wallet-balance)
+    + [Upload](#upload)
+    - [`vesicash.upload.uploadFile()` upload a file.](#vesicashuploaduploadfile-upload-a-file)
+* [Development](#development)
+    - [Contributing](#contributing)
+    - [Tests](#tests)
+* [Issues](#issues)
+
 
 ## Documentation
 
@@ -70,7 +106,7 @@ All method returns a promise that resolves into an axios response in this format
 }
 ```
 
-### `Auth`
+### Auth
 - ##### `vesicash.auth.login()` login into vesicash
     
     ```javascript
@@ -105,9 +141,9 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
     
-[Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication.
+[Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication
 
-### `Transactions`
+### Transactions
 
 - ##### `vesicash.transaction.create()` create a transaction by passing the required payload
 
