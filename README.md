@@ -67,7 +67,7 @@ All method returns a promise that resolves into an axios response in this format
 ```
 
 ### `Auth`
-- `vesicash.auth.login()` login into vesicash
+- ##### `vesicash.auth.login()` login into vesicash
     
     ```javascript
     ...
@@ -84,7 +84,7 @@ All method returns a promise that resolves into an axios response in this format
     }
     ```
 
-- `vesicash.auth.signup()` Signup a new user
+- ##### `vesicash.auth.signup()` Signup a new user
     
     ```javascript
     ...
@@ -104,7 +104,7 @@ All method returns a promise that resolves into an axios response in this format
    [Learn more](https://docs.vesicash.com/api-documentation/user-management/onboarding) about authentication.
 
 ### `Transactions`
-- `vesicash.transaction.create()` create a transaction by passing the required payload
+- ##### `vesicash.transaction.create()` create a transaction by passing the required payload
 
     ```javascript
     ...
@@ -138,7 +138,7 @@ All method returns a promise that resolves into an axios response in this format
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/create-a-product-transaction) about transactions and how to creat different types of transactions.
 
 
-- `vesicash.transaction.sendTransaction()` Send a transaction to involved parties.
+- ##### `vesicash.transaction.sendTransaction()` Send a transaction to involved parties.
 
     ```javascript
     ...
@@ -157,7 +157,7 @@ All method returns a promise that resolves into an axios response in this format
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/send-transaction) about sending transactions.
 
 
-- `vesicash.transaction.partiesUpdate()` Update the parties involved in a transaction.
+- ##### `vesicash.transaction.partiesUpdate()` Update the parties involved in a transaction.
 
     ```javascript
     ...
@@ -181,7 +181,7 @@ All method returns a promise that resolves into an axios response in this format
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/transaction-parties) about transaction parties.
 
 
-- `vesicash.transaction.acceptTransaction()` Agree to transaction
+- ##### `vesicash.transaction.acceptTransaction()` Agree to transaction
 
     ```javascript
     ...
@@ -199,7 +199,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/agree-to-transaction) about agreeing to a transaction.
 
-- `vesicash.transaction.rejectTransaction()` Reject a transaction
+- ##### `vesicash.transaction.rejectTransaction()` Reject a transaction
 
     ```javascript
     ...
@@ -219,7 +219,7 @@ All method returns a promise that resolves into an axios response in this format
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/reject-a-transaction) about rejecting a transaction.
 
 
-- `vesicash.transaction.listById()` Fetch transaction details
+- ##### `vesicash.transaction.listById()` Fetch transaction details
 
     ```javascript
     ...
@@ -235,7 +235,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/fetch-transaction-details) about fetching a transaction.
 
-- `vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers
+- ##### `vesicash.transaction.listByBusiness()` List all the transaction belonging to you business or your customers
 
     ```javascript
     ...
@@ -253,7 +253,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
 
-- `vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer
+- ##### `vesicash.transaction.listByUser()` List all the transactions that belongs to a specific customer
 
     ```javascript
     ...
@@ -271,7 +271,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/listing-your-transactions) about listing transactions.
 
-- `vesicash.transaction.requestExtendDueDate()` Request transaction due date extension
+- ##### `vesicash.transaction.requestExtendDueDate()` Request transaction due date extension
 
     ```javascript
     ...
@@ -290,7 +290,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
 
-- `vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request
+- ##### `vesicash.transaction.approveExtendDueDate()` Approve a transaction due date extension request
 
     ```javascript
     ...
@@ -309,7 +309,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/due-date-extension) about due date extension.
 
-- `vesicash.transaction.delivered()` Mark transaction as shipped
+- ##### `vesicash.transaction.delivered()` Mark transaction as shipped
 
     ```javascript
     ...
@@ -327,7 +327,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/indicate-transaction-delivery) about transaction delivery.
 
-- `vesicash.transaction.acceptDelivery()` Accept a shipped transaction
+- ##### `vesicash.transaction.acceptDelivery()` Accept a shipped transaction
 
     ```javascript
     ...
@@ -345,7 +345,7 @@ All method returns a promise that resolves into an axios response in this format
     ```
     [Learn more](https://docs.vesicash.com/api-documentation/transactions/accept-transaction-delivery) accepting a shipped transaction.
 
-- `vesicash.transaction.rejectDelivery()` Reject shipped transaction
+- ##### `vesicash.transaction.rejectDelivery()` Reject shipped transaction
 
     ```javascript
     ...
