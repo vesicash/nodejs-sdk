@@ -20,7 +20,7 @@
     "naira",
     "Africa"
   ],
-  "author": "Balogun Wahab <03balogun@gmail.com> (http://github.com/03balogun)",
+  "author": "Balogun Wahab <03balogun@gmail.com> (https://github.com/03balogun)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2"
