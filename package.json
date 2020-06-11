@@ -20,7 +20,7 @@
     "naira",
     "Africa"
   ],
-  "author": "Balogun Wahab <03balogun@gmail.com> (https://github.com/03balogun)",
+  "author": "Balogun Wahab <balogun.wahab@vesicash.com> (https://github.com/03balogun)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2"
@@ -34,11 +34,11 @@
     "jest": "^26.0.1"
   },
   "bugs": {
-    "url": "https://github.com/03balogun/vesicash-nodejs-sdk/issues"
+    "url": "https://github.com/vesicash/nodejs-sdk/issues"
   },
-  "homepage": "https://github.com/03balogun/vesicash-nodejs-sdk#readme",
+  "homepage": "https://github.com/vesicash/nodejs-sdk#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/03balogun/vesicash-nodejs-sdk.git"
+    "url": "git+https://github.com/vesicash/nodejs-sdk.git"
   }
 }

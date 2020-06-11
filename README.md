@@ -529,7 +529,7 @@ All method returns a promise that resolves into an axios response in this format
 #### Contributing
   - clone the project
     ```bash
-    $ git clone https://github.com/03balogun/vesicash-nodejs-sdk.git
+    $ git clone https://github.com/vesicash/nodejs-sdk.git
     ```
   - install dependencies
     ```bash
@@ -548,4 +548,4 @@ $ npm run test
 ```
 
 ## Issues
-If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/03balogun/vesicash-nodejs-sdk/issues)
+If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/vesicash/nodejs-sdk/issues)
